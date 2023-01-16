@@ -553,6 +553,24 @@ footer p{
     transform: scale(1.05);
 }
 
+@media screen and (min-width: 768px){
+    .form__content{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1.5rem;
+    }
+
+    .formulario{
+        height: 90vh;
+    }
+
+    .formulario__content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 /*trabaja con nosotros----------------------------------------------------*/
 /*trabaja con nosotros----------------------------------------------------*/
 /*trabaja con nosotros----------------------------------------------------*/
@@ -590,5 +608,5 @@ footer p{
 
 .postulate a{
     background-color: #006494;
-    
+
 }

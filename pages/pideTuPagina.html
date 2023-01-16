@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Píde Tu Página</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="../img/logo-shark.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900;1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+
+<body>
+    <header class="header__other">
+        <a href="index.html">
+            <div class="logo">
+                <img class="logo__img" src="../img/logo-shark-white.png" alt="">
+                <h2 class="logo__title">SHARKED</h2>
+            </div>
+        </a>
+        <nav>
+            <ul>
+                <a href="index.html">
+                    <li>Inicio</li>
+                </a>
+                <a href="sobreNosotros.html">
+                    <li>Sobre Nosotros</li>
+                </a>
+                <a href="galeriaDeTrabajos.html">
+                    <li>Galeria De Trabajos</li>
+                </a>
+                <a href="pideTuPagina.html">
+                    <li>Píde Tu Página</li>
+                </a>
+                <a href="trabajaConNosotros.html">
+                    <li>Trabaja Con Nosotros</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <section class="formulario">
+        <div class="formulario__content">
+            <p>cuantos mas datos proveas, mas preciso será el presupuesto</p>
+            <form action="">
+                <div class="form__content">
+                    <div class="input">
+                        <label for="">nombre y apellido</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="input">
+                        <label for="">mail</label>
+                        <input type="email" required>
+                    </div>
+                    <div class="input">
+                        <label for="">número de teléfono</label>
+                        <input type="number">
+                    </div>
+                    <div class="input">
+                        <label for="">¿sobre que tema quieres basar tu página?</label>
+                        <textarea name="" id="" cols="30" rows="2" required></textarea>
+                    </div>
+                    <div class="input">
+                        <label for="">¿en cuánto tiempo la precizas?</label>
+                        <textarea name="" id="" cols="30" rows="2"></textarea>
+                    </div>
+                    <div class="radio">
+                        <label class="label__radio" for="">¿ya tienes una pagina web que quieras actualizar?</label>
+                        <div>
+                            <label for="" class="label__radio">si</label>
+                            <input type="radio" name="option1" id="mayor">
+
+                            <label for="" class="label__radio">no</label>
+                            <input type="radio" name="option1" id="menor">
+                        </div>
+                    </div>
+                    <div class="radio">
+                        <label class="label__radio" for="">¿ya tienes un logo?</label>
+                        <div>
+                            <label for="" class="label__radio">si</label>
+                            <input type="radio" name="option2" id="mayor">
+
+                            <label for="" class="label__radio">no</label>
+                            <input type="radio" name="option2" id="menor">
+                        </div>
+                    </div>
+                    <div class="radio">
+                        <label class="label__radio" for="">en caso de que si, ¿quieres uno?</label>
+                        <div>
+                            <label for="" class="label__radio">si</label>
+                            <input type="radio" name="option3" id="mayor">
+
+                            <label for="" class="label__radio">no</label>
+                            <input type="radio" name="option3" id="menor">
+                        </div>
+                    </div>
+                    <div class="input">
+                        <label for="">comentame tu idea</label>
+                        <textarea name="" id="" cols="30" rows="2"></textarea>
+                    </div>
+                    <div class="input">
+                        <label for="">¿algo más que quieras comentar?</label>
+                        <textarea name="" id="" cols="30" rows="2"></textarea>
+                    </div>
+                    <div class="submit">
+                        <input class="enviar" type="submit" value="ENVIAR">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="footer__container  wow animate__animated animate__fadeIn">
+            <div class="footer__left">
+                <p>Términos y condiciones<br>
+                    políticas de privicad</p>
+            </div>
+            <div class="footer__center">
+                <a href="index.html">
+                    <div class="logo">
+                        <img src="../img/logo-shark-white.png" alt="">
+                        <h2>SHARKED</h2>
+                    </div>
+                </a>
+            </div>
+            <div class="footer__right">
+                <div class="footer__socialm">
+                    <div class="instagram">
+                        <a href="https://www.instagram.com/sharked.dw/">
+                            <img src="../img/instagram.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <p>Síguenos en nuestras redes sociales.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>

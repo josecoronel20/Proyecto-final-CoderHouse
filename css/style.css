@@ -1,6 +1,8 @@
 *{
     box-sizing: border-box;
     text-align: center;
+    padding: 0;
+    margin: 0;
 }
 
 html{
@@ -21,11 +23,17 @@ p{font-size: 1.25em;color: #13293D;font-weight: 500;}
 ul{list-style: none;}
 a{text-decoration: none;}
 
+/*index---------------------------------------------------------------------*/
+/*index---------------------------------------------------------------------*/
+/*index---------------------------------------------------------------------*/
+
 header{
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 1rem;
+    align-items: center;
+    gap: 1rem;
 }
 
 .logo{
@@ -35,17 +43,26 @@ header{
 }
 
 .logo img{
-    width: 4rem;
+    width: 2.5rem;
 }
 
 .logo h2{
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #E8F1F2;
     margin: 0;
 }
 
 ul{
+    display: flex;
+    flex-direction: row;
     text-align: center;
+
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 nav li{
@@ -72,6 +89,7 @@ nav li:hover{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    height: 100vh;
 }
 
 #banner{
@@ -79,7 +97,7 @@ nav li:hover{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 90vh;
+    height: 70%;
 }
 
 #banner h1{
@@ -95,16 +113,23 @@ nav li:hover{
 /*------------------------------------section2----------------------------*/
 
 #section2{
-    padding: 0px 10vh;
+    padding: 0px 3vh;
     text-align: center;
 }
 
 #section2 h2{
     color: #006494;
+    font-size: 2em;
 }
 
 .section2__box1 p{
     color: #13293D;
+}
+
+.section2__text{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .section2__box1{
@@ -128,7 +153,7 @@ nav li:hover{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     column-gap: 1rem;
-    row-gap: 1rem;
+    row-gap: 1.5rem;
     padding-bottom: 10%;
 }
 
@@ -150,15 +175,18 @@ nav li:hover{
 
 .section3__container{
     height: 100vh;
+    min-height: 1000px;
     display: flex;
-    justify-content: space-evenly;
     flex-direction: column;
+    justify-content: center;
     text-align: center;
-    padding: 0px 10vh;
+    padding: 0px 3vh;
 }
 
 #section3 img{
-    width: 60%;
+    width: 70%;
+    max-width: 300px;
+    margin-top: 2rem;
 }
 
 #section3 p, h2{
@@ -171,7 +199,7 @@ nav li:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 2rem;
 }
 
 .section3__bottom{
@@ -209,13 +237,18 @@ nav li:hover{
 
 footer{
     background-color: #13293D;
+    padding: 3vh;
 }
 
 .footer__container{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    row-gap: 5vh;
-    padding: 5vh 0 ;
+    row-gap: 2rem;
+    align-items: center;
+}
+
+footer img{
+    width: 2.5rem;
 }
 
 footer p{

@@ -27,58 +27,58 @@ a{text-decoration: none;}
 /*index---------------------------------------------------------------------*/
 /*index---------------------------------------------------------------------*/
 
-header{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 1rem;
-    align-items: center;
-    gap: 1rem;
+.navbar{
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 2000;
 }
 
-.logo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+.navbar-toggler{
+    background-color: #E8F1F2;
+    margin-right: 1rem;
 }
 
-.logo img{
+header img {
     width: 2.5rem;
+    height: 2.5rem;
 }
 
-.logo h2{
-    font-size: 2.5rem;
-    color: #E8F1F2;
+header h3{
+    font-size: 2rem;
     margin: 0;
 }
 
-ul{
+.navbar-brand{
     display: flex;
     flex-direction: row;
-    text-align: center;
-
+    margin-left: 1rem;
 }
 
-nav{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.container-fluid{
+    background-color: #13293D;
+    height: 7vh;
+    padding: 0;
 }
 
-nav li{
+.navbar-nav{
+    background-color: #13293D;
+    width: 100%;
+    left: 0;
+}
+
+#navbarSupportedContent{
+    right: 0;
+}
+
+.navbar-toggler-icon{
     color: #E8F1F2;
-    font-weight:500;
-}
-
-nav li:hover{
-    color: #1B98E0;
-    transform: scale(1.07);
-    transition: all 0.5s;
 }
 
 /*------------------------------------banner----------------------------*/
 
-#section__banner{
+#banner{
     background-image: linear-gradient(
         0deg,
         rgba(1, 0, 49, 0.3),
@@ -92,12 +92,12 @@ nav li:hover{
     height: 100vh;
 }
 
-#banner{
+.banner__content{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 70%;
+    height: 100%;
 }
 
 #banner h1{
@@ -137,7 +137,7 @@ nav li:hover{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    height: 100vh;
+    height: 60vh;
 }
 
 .section2__box1 img{
@@ -149,22 +149,9 @@ nav li:hover{
     color: #006494;
 }
 
-.section2__box2{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    column-gap: 1rem;
-    row-gap: 1.5rem;
-    padding-bottom: 10%;
-}
-
-.section2__box2__card{
-    background-color: #006494;
-    border-radius: 30px;
-    padding: 1rem;
-}
-
-.section2__box2__card p, h3{
-    color: #E8F1F2;
+.accordion{
+    margin: 10vh 0;
+    z-index: 1;
 }
 
 /*-------------------------------------section3-------------------------------*/
@@ -174,13 +161,12 @@ nav li:hover{
 }
 
 .section3__container{
-    height: 100vh;
-    min-height: 1000px;
+    min-height: 90px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    padding: 0px 3vh;
+    padding: 15vh 3vh;
 }
 
 #section3 img{
@@ -260,22 +246,17 @@ footer p{
 /*mediaquery----------------------------------------------------------------*/
 
 @media screen and (min-width: 768px){
-    header{
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    }
 
-    ul{
-        display: flex;
-        flex-direction: row;
-        gap: 1rem;
-    }
 
     .section2__box1 img{
-        display: flex;
-        width: 45%;
+        display: block;
+        width: 40%;
+        max-width: 600px;
         margin: 0 25px;
+    }
+
+    .section2__box1{
+        flex-direction: row;
     }
 
     .section2__box2{
@@ -286,17 +267,17 @@ footer p{
     }
 
     .section3__bottom{
-        display: flex;
         flex-direction: row;
         align-items: center;
+        gap: 10vh;
     }
 
-    #section3{
+    .section3__container{
         display:flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        height: 90vh;
+        justify-content: space-evenly;
+        height: 80vh;
         padding: 0px 50px;
     }
 
@@ -307,7 +288,6 @@ footer p{
     #section3 img{
         width: 40%;
         margin: 0px;
-        gap: 20px;
     }
 
     .footer__container{

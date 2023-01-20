@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Nosotros</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,31 +18,38 @@
 </head>
 
 <body>
-    <header class="header__other ">
-        <a href="../index.html">
-            <div class="logo wow animate__animated animate__fadeIn">
-                <img class="logo__img" src="../img/logo-shark-white.png" alt="">
-                <h2 class="logo__title">SHARKED</h2>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center wow animate__animated animate__fadeIn" href="#">
+                    <img src="../img/logo-shark-white.png" alt="Logo" width="30" height="24"
+                        class="d-inline-block align-text-top">
+                    <h3 class="text-light">SHARKED</h3>
+                </a>
+                <button class="navbar-toggler wow animate__animated animate__fadeIn" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse wow animate__animated animate__fadeIn" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="sobreNosotros.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="galeriaDeTrabajos.html">Galeria de Trabajos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="pideTuPagina.html">Píde tu Página</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="trabajaConNosotros.html">Trabaja con Nosotros</a>
+                        </li>
+                </div>
             </div>
-        </a>
-        <nav class="wow animate__animated animate__fadeIn">
-            <ul>
-                <a href="../index.html">
-                    <li>Inicio</li>
-                </a>
-                <a href="sobreNosotros.html">
-                    <li>Sobre Nosotros</li>
-                </a>
-                <a href="galeriaDeTrabajos.html">
-                    <li>Galeria De Trabajos</li>
-                </a>
-                <a href="pideTuPagina.html">
-                    <li>Píde Tu Página</li>
-                </a>
-                <a href="trabajaConNosotros.html">
-                    <li>Trabaja Con Nosotros</li>
-                </a>
-            </ul>
         </nav>
     </header>
     <section id="quieneSomos" class="height__vh">
@@ -108,24 +117,24 @@
         </div>
     </section>
     <footer>
+        <div class="footer__center">
+            <a href="../index.html">
+                <div class="logo">
+                    <img src="../img/logo-shark-white.png" alt="">
+                    <h2>SHARKED</h2>
+                </div>
+            </a>
+        </div>
         <div class="footer__container  wow animate__animated animate__fadeIn">
             <div class="footer__left">
                 <p>Términos y condiciones<br>
                     políticas de privicad</p>
             </div>
-            <div class="footer__center">
-                <a href="index.html">
-                    <div class="logo">
-                        <img src="../img/logo-shark-white.png" alt="">
-                        <h2>SHARKED</h2>
-                    </div>
-                </a>
-            </div>
             <div class="footer__right">
                 <div class="footer__socialm">
                     <div class="instagram">
                         <a href="https://www.instagram.com/sharked.dw/">
-                            <img src="../img/instagram.png" alt="">
+                            <img src="img/instagram.png" alt="">
                         </a>
                     </div>
                 </div>
@@ -133,12 +142,24 @@
                     <p>Síguenos en nuestras redes sociales.</p>
                 </div>
             </div>
+            <p>&copy;copyright</p>
+            <div>
+                <p>número de contacto</p>
+                <p>11 1234-5678</p>
+            </div>
+            <div>
+                <p>mail de contacto</p>
+                <p>contacto@sharked.com</p>
+            </div>
         </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script>
         new WOW().init();
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

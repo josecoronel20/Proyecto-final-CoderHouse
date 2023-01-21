@@ -491,7 +491,7 @@ footer p{
     background-color: #E8F1F2;
     padding: 5%;
     border-radius: 5%;
-    max-width: 400px;
+    max-width: 350px;
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -516,6 +516,13 @@ footer p{
 }
 
 @media screen and (min-width: 768px) {
+    .galeria__trabajos{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 992px) {
     .galeria__trabajos{
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);

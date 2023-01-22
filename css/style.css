@@ -538,20 +538,22 @@ footer p{
     color: #006494;
     font-size: 1.25rem;
     margin: 0;
-    height: 8vh;
+}
+
+.galeria__card p{
+    color: #13293D;
 }
 
 @media screen and (min-width: 768px) {
     .galeria__trabajos{
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
     }
 }
 
 @media screen and (min-width: 992px) {
     .galeria__trabajos{
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+    
     }
 }
 

@@ -561,10 +561,17 @@ footer p{
 /*pide tu pagina----------------------------------------------------------------*/
 /*pide tu pagina----------------------------------------------------------------*/
 
-.formulario{
+
+.formulario p{
+    margin: 0;
+}
+
+.formulario__content{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
     background-color: #E8F1F2;
-    padding: 3vh;
-    text-align: center;
+    padding:22vh 3vh 15vh 3vh;
 }
 
 .form__content{
@@ -615,10 +622,19 @@ footer p{
     transform: scale(1.05);
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5vh;
+
+}
+
 @media screen and (min-width: 768px){
     .form__content{
         grid-template-columns: repeat(2, 1fr);
         column-gap: 1.5rem;
+        max-width: 1200px;
     }
 
     .formulario{
@@ -630,37 +646,51 @@ footer p{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin: 0;
     }
 }
 
+
 /*trabaja con nosotros----------------------------------------------------*/
 /*trabaja con nosotros----------------------------------------------------*/
 /*trabaja con nosotros----------------------------------------------------*/
 
+.trabajaConNos{
+    padding-top: 7vh;
+    background-color: #E8F1F2;
+}
+
+.banner__trabajaConNos{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
 
 .banner__trabajaConNos img{
     width: 100%;
 }
-
-.banner__trabajaConNos p{
-    color:#E8F1F2
+.trabajaConNos h2{
+    font-weight: bold;
+    color: #006494;
 }
 
-.banner__trabajaConNos{
-    background-color: #006494;
-    padding: 2vh;
+.banner__trabajaConNos p{
+    color:#006494;
+    margin-bottom: 5vh;
 }
 
 .postulate{
-    background-color: #E8F1F2;
+    background-color: #006494;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     padding: 2vh;
     align-items: center;
 }
 
-.postulate h3{
-    color: #006494;
+.postulate__bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .postulate img{
@@ -668,7 +698,6 @@ footer p{
     display: none;
 }
 
-.postulate a{
-    background-color: #006494;
-
+.postulate h3, p{
+    color: #E8F1F2;
 }

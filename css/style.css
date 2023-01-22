@@ -305,8 +305,7 @@ footer p{
 
 
 .height__vh{
-    height: 90vh;
-    padding: 0 10vh;
+    padding: 15vh 3vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -337,6 +336,8 @@ footer p{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 3vh;
+    max-width: 1000px;
 }
 
 #quieneSomos p, h1{
@@ -356,23 +357,33 @@ footer p{
 
 #porQueElegirnos{
     background-color: #E8F1F2;
+
+}
+
+.porQueElegirnos__container{
     display: flex;
     flex-direction: column;
+    gap: 5vh;
 }
 
 #porQueElegirnos h2, p{
     color: #006494;
 }
 
-#porQueElegirnos ul{
-    display: flex;
-    flex-direction: column;
-    gap: 5vh;
+.porQueElegirnos__container ul{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 3vh;
+    row-gap: 3vh;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
 }
 
 #porQueElegirnos li{
     color: #247BA0;
     font-size: 1.25em;
+    max-width: 400px;
 }
 
 
@@ -385,7 +396,8 @@ footer p{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 100px 20px;
+    padding: 15vh 3vh;
+    gap: 5vh;
 }
 
 #comoSomos h3{
@@ -395,8 +407,8 @@ footer p{
 .caracteristicas{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    column-gap: 1rem;
-    row-gap: 1rem;
+    column-gap: 3vh;
+    row-gap: 3vh;
 }
 
 .card h2, p{
@@ -407,6 +419,13 @@ footer p{
     background-color: #E8F1F2;
     border-radius: 30px;
     padding: 1rem;
+    max-width: 400px;
+}
+
+.p-bottom{
+    color: #E8F1F2;
+    margin: 0;
+    z-index: 50;
 }
 
 /*mediaquery------------------------------------------------------------------*/
@@ -420,7 +439,6 @@ footer p{
     .quieneSomos__container{
         display: flex;
         flex-direction: column;
-        padding: 0 10vh;
         justify-content: center;
         align-items: center;
     }
@@ -436,17 +454,25 @@ footer p{
     #quieneSomos img {
         display: flex;
         width: 45%;
+        max-width: 500px;
     }
 
-    #comoSomos{
-        gap: 40px;
-        height: 90vh;
-        padding: 0 10vh;
+    .porQueElegirnos__container ul{
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .caracteristicas{
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(1, 1fr);
+
+
+
+
+    @media  screen and (min-width: 992px){
+        .porQueElegirnos__container ul{
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .caracteristicas{
+            grid-template-columns: repeat(3, 1fr);
+        }
     }
 }
 

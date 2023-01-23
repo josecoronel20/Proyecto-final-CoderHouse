@@ -76,6 +76,15 @@ header h3{
     color: #E8F1F2;
 }
 
+.nav-link{
+    color: #E8F1F2;
+}
+
+.nav-link:hover{
+    color: #1B98E0;
+    transition: all 0.3s;
+    transform: scale(1.05);
+}
 /*------------------------------------banner----------------------------*/
 
 #banner{

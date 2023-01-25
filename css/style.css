@@ -7,12 +7,18 @@
 .colorP {
     color: #437D85;
 }
+.bgP{
+    background-color: #437D85;
+}
 
 .colorS {
     color: #C4E6E4;
 }
+.bgS{
+    background-color: #62A8AC;
+}
 
-.colorT{
+.colorT {
     color: #5FC6CF;
 }
 
@@ -28,10 +34,10 @@ body {
 }
 
 p {
-    font-size: 1.25rem;
+    font-size: 16px;
 }
 
-ul {
+.nab-barul {
     list-style: none;
 }
 
@@ -39,8 +45,9 @@ a {
     text-decoration: none;
 }
 
-h5{
+h5 {
     color: #437D85;
+    font-size: 2rem;
 }
 
 .text-hover:hover {
@@ -50,17 +57,41 @@ h5{
 }
 
 .button-hover {
-    padding: 1rem 1.3rem;
-    background-color: #C4E6E4;
-    border-radius: 5%;
+    padding: 0.8em 1.8em;
+    border: 7px solid #C4E6E4;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #C4E6E4;
+}
+
+.button-hover::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #C4E6E4;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+
+.button-hover:hover::before {
+    width: 105%;
 }
 
 .button-hover:hover {
-    border: #5FC6CF solid 5px;
-    transition: all 0.3s;
-    transform: scale(1.05);
-    background-color: #437D85;
-    color: #C4E6E4;
+    color: #62A8AC;
 }
 
 
@@ -76,7 +107,7 @@ h5{
 }
 
 .container-fluid {
-    height: 7vh;
+    height: 3.7rem;
     padding: 0;
 }
 
@@ -149,7 +180,7 @@ header img {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    height: 60vh;
+    padding: 15vh 0;
 
 }
 
@@ -186,15 +217,10 @@ header img {
 }
 
 .section-empezar img {
-    width: 100%;
-    max-width: 400px;
+    width: 90%;
+    max-width: 300px;
 }
 
-.section-empezar p,
-.section-empezar h2 {
-    color: #C4E6E4;
-    margin: 0;
-}
 
 .section3__bottom {
     display: flex;
@@ -202,14 +228,7 @@ header img {
     align-items: center;
     gap: 5vh;
     margin-top: 10vh;
-}
-
-.section3__left {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5vh;
+    margin-bottom: 10vh;
 }
 
 /* corregir el mobile  */
@@ -228,7 +247,7 @@ footer img {
     width: 2.5rem;
 }
 
-footer p{
+footer p {
     margin: 0;
 }
 
@@ -265,9 +284,10 @@ footer p{
 
     .section3__bottom img {
         width: 40%;
+        max-width: 400px;
     }
 
-/* footer */
+    /* footer */
 
     .footer-subcontainer {
         display: grid;
@@ -282,32 +302,9 @@ footer p{
 /*sobre nosotros-------------------------------------------------------------*/
 /*sobre nosotros-------------------------------------------------------------*/
 
-
-.height__vh {
-    padding: 15vh 3vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.header__other {
-    background-color: #13293D;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-}
-
-.header__other nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#quieneSomos {
-    background-color: #006494;
+/* quienes somos */
+.quieneSomos-container{
+    padding: 3.7rem 0;
 }
 
 .quieneSomos__container {
@@ -317,11 +314,6 @@ footer p{
     align-items: center;
     gap: 3vh;
     max-width: 1000px;
-}
-
-#quieneSomos p,
-#quieneSomos h1 {
-    color: #E8F1F2;
 }
 
 #quieneSomos img {
@@ -336,102 +328,65 @@ footer p{
 
 /*porque elegirnos-----------------------------------------------------------------*/
 
-#porQueElegirnos {
-    background-color: #E8F1F2;
-
-}
-
-.porQueElegirnos__container {
+#porQueElegirnos .container {
     display: flex;
     flex-direction: column;
     gap: 5vh;
-}
-
-#porQueElegirnos h2,
-#porQueElegirnos p {
-    color: #006494;
-}
-
-.porQueElegirnos__container ul {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    column-gap: 3vh;
-    row-gap: 3vh;
-    margin: 0;
-    padding: 0;
-    justify-content: center;
-}
-
-#porQueElegirnos li {
-    color: #247BA0;
-    font-size: 1.25em;
-    max-width: 400px;
-}
-
-
-
-/*comosomos--------------------------------------------------------------------*/
-
-#comoSomos {
-    background-color: #247BA0;
-    display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    padding: 15vh 3vh;
-    gap: 5vh;
 }
 
-#comoSomos h3 {
-    color: #E8F1F2;
+#porQueElegirnos ul {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 5vh;
+    row-gap: 7vh;
+    justify-content: center;
+    list-style: #f2f2;
 }
+
+#porQueElegirnos li{
+    width: 50%;
+    margin: auto;
+}
+
+li::marker{
+    color: #5FC6CF;
+    font-size: 1.5rem;
+}
+
+/*comosomos--------------------------------------------------------------------*/
 
 .caracteristicas {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     column-gap: 3vh;
     row-gap: 3vh;
-}
-
-.card h2,
-.card p {
-    color: #247BA0;
+    width: 50%;
+    min-width: 300px;
 }
 
 .card {
-    background-color: #E8F1F2;
+    background-color: #C4E6E4;
     border-radius: 30px;
     padding: 1rem;
-    max-width: 400px;
+    height: 300px;
 }
 
-.p-bottom {
-    color: #E8F1F2;
-    margin: 0;
-    z-index: 50;
+.card:hover{
+    transition: all 0.3s;
+    transform: scale(1.05);
 }
-
 /*mediaquery------------------------------------------------------------------*/
 
 @media screen and (min-width: 768px) {
-    .header__other {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .quieneSomos__container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
 
     .underTitle {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        gap: 30px;
+        gap: 5vh;
     }
 
     #quieneSomos img {
@@ -440,21 +395,20 @@ footer p{
         max-width: 500px;
     }
 
-    .porQueElegirnos__container ul {
+    #porQueElegirnos ul {
         grid-template-columns: repeat(2, 1fr);
+        column-gap: 15vh;
+        row-gap: 10vh;
     }
 
-
-
-
+    #porQueElegirnos li{
+        width: 100%;
+    }
 
     @media screen and (min-width: 992px) {
-        .porQueElegirnos__container ul {
-            grid-template-columns: repeat(3, 1fr);
-        }
-
         .caracteristicas {
             grid-template-columns: repeat(3, 1fr);
+            width: 100%;
         }
     }
 }

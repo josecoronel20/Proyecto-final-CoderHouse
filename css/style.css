@@ -7,14 +7,16 @@
 .colorP {
     color: #437D85;
 }
-.bgP{
+
+.bgP {
     background-color: #437D85;
 }
 
 .colorS {
     color: #C4E6E4;
 }
-.bgS{
+
+.bgS {
     background-color: #62A8AC;
 }
 
@@ -303,7 +305,7 @@ footer p {
 /*sobre nosotros-------------------------------------------------------------*/
 
 /* quienes somos */
-.quieneSomos-container{
+.quieneSomos-container {
     padding: 3.7rem 0;
 }
 
@@ -345,12 +347,12 @@ footer p {
     list-style: #f2f2;
 }
 
-#porQueElegirnos li{
+#porQueElegirnos li {
     width: 50%;
     margin: auto;
 }
 
-li::marker{
+li::marker {
     color: #5FC6CF;
     font-size: 1.5rem;
 }
@@ -373,10 +375,11 @@ li::marker{
     height: 300px;
 }
 
-.card:hover{
+.card:hover {
     transition: all 0.3s;
     transform: scale(1.05);
 }
+
 /*mediaquery------------------------------------------------------------------*/
 
 @media screen and (min-width: 768px) {
@@ -401,7 +404,7 @@ li::marker{
         row-gap: 10vh;
     }
 
-    #porQueElegirnos li{
+    #porQueElegirnos li {
         width: 100%;
     }
 
@@ -409,6 +412,11 @@ li::marker{
         .caracteristicas {
             grid-template-columns: repeat(3, 1fr);
             width: 100%;
+        }
+
+        #navbarSupportedContent {
+            display: flex;
+            justify-content: flex-end;
         }
     }
 }

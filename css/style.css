@@ -146,10 +146,8 @@ header img {
 
 /*------------------------------------banner----------------------------*/
 
-#banner {
-    background-image: linear-gradient(0deg,
-            rgba(45, 83, 89, 0.2),
-            rgba(45, 83, 89, 0.2)), url("../img/banner.jpg");
+#hero {
+    background-image: url("../img/banner2.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -157,22 +155,28 @@ header img {
     height: 100vh;
 }
 
-.banner__content {
+.hero__content {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100%;
+    padding: 0 15vh;
 }
 
-#banner h1 {
+#hero h1 {
     color: #C4E6E4;
     text-align: center;
 }
 
-#banner img {
+.logo-hero img {
     display: flex;
     justify-content: center;
+    width: 2.7rem;
+}
+
+.logo-banner h1 {
+    font-size: 5rem;
 }
 
 /*------------------------------------ventajas----------------------------*/
@@ -258,6 +262,8 @@ footer p {
 /*mediaquery index----------------------------------------------------------------*/
 
 @media screen and (min-width: 768px) {
+/* section hero */
+
 
     /* seccion ventajas */
     .ventajas-box1 {
@@ -298,6 +304,16 @@ footer p {
         align-items: center;
     }
 
+}
+
+@media screen and (min-width: 992px) {
+    .hero__content {
+        align-items: flex-start;
+    }
+
+    .logo-hero img {
+        width: auto;
+    }
 }
 
 /*sobre nosotros-------------------------------------------------------------*/
@@ -417,6 +433,10 @@ li::marker {
         #navbarSupportedContent {
             display: flex;
             justify-content: flex-end;
+        }
+
+        #hero h1 {
+            font-size: 5rem;
         }
     }
 }

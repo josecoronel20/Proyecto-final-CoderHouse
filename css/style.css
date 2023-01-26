@@ -262,7 +262,7 @@ footer p {
 /*mediaquery index----------------------------------------------------------------*/
 
 @media screen and (min-width: 768px) {
-    /* section hero */
+/* section hero */
 
 
     /* seccion ventajas */
@@ -449,8 +449,13 @@ li::marker {
     padding-top: 7vh;
 }
 
-.galeria__trabajos a{
-    width: 50%;
+.galeria__content {
+    padding: 0 3vh 15vh 3vh;
+    background-color: #006494;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .galeria__title {
@@ -471,17 +476,17 @@ li::marker {
     grid-template-columns: repeat(1, 1fr);
     column-gap: 8vh;
     row-gap: 8vh;
-    justify-content: center;
 }
 
 .galeria__card {
     background-color: #E8F1F2;
-    border-radius: 15px;
+    padding: 5%;
+    border-radius: 5%;
+    max-width: 350px;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     gap: 2vh;
-
-
 }
 
 .galeria__card:hover {
@@ -492,7 +497,6 @@ li::marker {
 
 .galeria__card img {
     width: 100%;
-    border-radius: 15px;
 }
 
 .galeria__card h4 {

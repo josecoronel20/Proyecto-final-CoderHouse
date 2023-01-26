@@ -17,7 +17,7 @@
 }
 
 .bgS {
-    background-color: #62A8AC;
+    background-color: #C4E6E4;
 }
 
 .colorT {
@@ -384,14 +384,14 @@ li::marker {
     min-width: 300px;
 }
 
-.card {
+.caracteristicas .card {
     background-color: #C4E6E4;
     border-radius: 30px;
     padding: 1rem;
     height: 300px;
 }
 
-.card:hover {
+.caracteristicas .card:hover {
     transition: all 0.3s;
     transform: scale(1.05);
 }
@@ -447,59 +447,6 @@ li::marker {
 
 #galeria {
     padding-top: 7vh;
-}
-
-
-
-.galeria__title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 20vh;
-}
-
-#galeria h3 {
-    color: #E8F1F2;
-    font-size: 1.7rem;
-    text-decoration: underline;
-}
-
-.galeria__trabajos {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    column-gap: 8vh;
-    row-gap: 8vh;
-}
-
-.galeria__card {
-    background-color: #E8F1F2;
-    padding: 5%;
-    border-radius: 5%;
-    max-width: 350px;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    gap: 2vh;
-}
-
-.galeria__card:hover {
-    outline: #1B98E0 solid 10px;
-    transform: scale(1.05);
-    transition: all 0.5s;
-}
-
-.galeria__card img {
-    width: 100%;
-}
-
-.galeria__card h4 {
-    color: #006494;
-    font-size: 1.25rem;
-    margin: 0;
-}
-
-.galeria__card p {
-    color: #13293D;
 }
 
 @media screen and (min-width: 768px) {

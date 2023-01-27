@@ -17,7 +17,7 @@
 }
 
 .bgS {
-    background-color: #C4E6E4;
+    background-color: #62A8AC;
 }
 
 .colorT {
@@ -72,6 +72,7 @@ h5 {
     z-index: 1;
     font-family: inherit;
     color: #C4E6E4;
+    width: 233px;
 }
 
 .button-hover::before {

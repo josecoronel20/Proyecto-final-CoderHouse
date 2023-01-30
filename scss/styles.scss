@@ -263,7 +263,7 @@ footer p {
 /*mediaquery index----------------------------------------------------------------*/
 
 @media screen and (min-width: 768px) {
-/* section hero */
+    /* section hero */
 
 
     /* seccion ventajas */
@@ -467,96 +467,20 @@ li::marker {
 /*pide tu pagina----------------------------------------------------------------*/
 /*pide tu pagina----------------------------------------------------------------*/
 
+#formulario {
+    padding: 14vh 0;
 
-.formulario p {
-    margin: 0;
-}
-
-.formulario__content {
-    display: flex;
-    flex-direction: column;
-    gap: 5vh;
-    background-color: #E8F1F2;
-    padding: 22vh 3vh 15vh 3vh;
-}
-
-.form__content {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    row-gap: 1.5rem;
-}
-
-.form__content label,
-.form__content input,
-.form__content textarea {
-    text-align: start !important;
-}
-
-.form__content label {
-    font-weight: bold;
-    color: #006494;
-}
-
-.input {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.radio {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-}
-
-.submit input {
-    margin: 0;
-    height: fit-content;
-    width: fit-content;
-    background-color: #006494;
-    color: #E8F1F2;
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 2.7em;
-    font-weight: bold;
-    cursor: pointer;
-    border: hidden;
-}
-
-.submit input:hover {
-    background-color: #1B98E0;
-    color: #E8F1F2;
-    transition: all 0.3s;
-    transform: scale(1.05);
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 5vh;
-
-}
-
-@media screen and (min-width: 768px) {
-    .form__content {
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 1.5rem;
-        max-width: 1200px;
+    p,
+    .form-check {
+        color: #C4E6E4;
     }
 
-    .formulario {
-        height: 90vh;
-    }
-
-    .formulario__content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
+    .form-floating label{
+        color: #437D85;
+        border-radius: 10px;
     }
 }
+
 
 
 /*trabaja con nosotros----------------------------------------------------*/

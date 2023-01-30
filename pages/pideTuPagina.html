@@ -8,7 +8,7 @@
     <title>Píde Tu Página</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="shortcut icon" href="../img/logo-shark.png" type="image/x-icon">
@@ -53,115 +53,99 @@
             </div>
         </nav>
     </header>
-    <section class="formulario">
-        <div class="formulario__content">
-            <p>cuantos más datos proveas, más preciso será el presupuesto</p>
-            <form action="">
-                <div class="form__content">
-                    <div class="input">
-                        <label for="">nombre y apellido</label>
-                        <input type="text" required>
-                    </div>
-                    <div class="input">
-                        <label for="">mail</label>
-                        <input type="email" required>
-                    </div>
-                    <div class="input">
-                        <label for="">número de teléfono</label>
-                        <input type="number">
-                    </div>
-                    <div class="input">
-                        <label for="">¿sobre que tema quieres basar tu página?</label>
-                        <textarea name="" id="" cols="30" rows="2" required></textarea>
-                    </div>
-                    <div class="input">
-                        <label for="">¿en cuánto tiempo la precizas?</label>
-                        <textarea name="" id="" cols="30" rows="2"></textarea>
-                    </div>
-                    <div class="radio">
-                        <label class="label__radio" for="">¿ya tienes una pagina web que quieras actualizar?</label>
-                        <div>
-                            <label for="" class="label__radio">si</label>
-                            <input type="radio" name="option1" id="mayor">
-
-                            <label for="" class="label__radio">no</label>
-                            <input type="radio" name="option1" id="menor">
-                        </div>
-                    </div>
-                    <div class="radio">
-                        <label class="label__radio" for="">¿ya tienes un logo?</label>
-                        <div>
-                            <label for="" class="label__radio">si</label>
-                            <input type="radio" name="option2" id="mayor">
-
-                            <label for="" class="label__radio">no</label>
-                            <input type="radio" name="option2" id="menor">
-                        </div>
-                    </div>
-                    <div class="radio">
-                        <label class="label__radio" for="">en caso de que si, ¿quieres uno?</label>
-                        <div>
-                            <label for="" class="label__radio">si</label>
-                            <input type="radio" name="option3" id="mayor">
-
-                            <label for="" class="label__radio">no</label>
-                            <input type="radio" name="option3" id="menor">
-                        </div>
-                    </div>
-                    <div class="input">
-                        <label for="">comentame tu idea</label>
-                        <textarea name="" id="" cols="30" rows="2"></textarea>
-                    </div>
-                    <div class="input">
-                        <label for="">¿algo más que quieras comentar?</label>
-                        <textarea name="" id="" cols="30" rows="2"></textarea>
-                    </div>
+    <section id="formulario">
+        <section class="container">
+            <h3 class="h3 mb-5 colorS">Completar para obtener un presupuesto.</h3>
+            <form>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="name">
+                    <label for="floatingInput">Nombre y apellido</label>
                 </div>
-                <div class="submit">
-                    <input class="enviar" type="submit" value="ENVIAR">
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Email</label>
                 </div>
+                <div class="form-floating mb-3">
+                    <input type="number" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Número de contacto</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                        style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">Idea principal de la página</label>
+                </div>
+                <p>Ya tienes una página que quieras actualizar?</p>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                        value="option1">
+                    <label class="form-check-label" for="inlineRadio1">Si</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                        value="option2">
+                    <label class="form-check-label" for="inlineRadio2">No</label>
+                </div>
+                <p>Ya tienes un logo que quieras actualizar?</p>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                        value="option1">
+                    <label class="form-check-label" for="inlineRadio1">Si</label>
+                </div>
+                <div class="form-check form-check-inline mb-3">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                        value="option2">
+                    <label class="form-check-label" for="inlineRadio2">No</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                        style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">Algo más que quieras comentar?</label>
+                </div>
+
+
+                <button type="submit" class="button-hover">ENVIAR</button>
             </form>
-        </div>
+        </section>
     </section>
-    <footer>
-        <div class="container py-5">
-            <div class="footer__center">
-                <a href="../index.html">
-                    <div class="logo d-flex flex-row justify-content-center align-items-center">
-                        <img src="../img/logo-shark-white.png" alt="logo-sharked">
-                        <h2 class="colorS m-0">SHARKED</h2>
-                    </div>
-                </a>
-            </div>
-            <div class="footer-subcontainer mt-3 wow animate__animated animate__fadeIn">
-                <div class="footer__left">
-                    <p class="colorS">Términos y condiciones<br>
-                        políticas de privicad</p>
-                </div>
-                <div class="footer__right">
-                    <div class="footer__socialm">
-                        <div class="instagram">
-                            <a href="https://www.instagram.com/sharked.dw/">
-                                <img src="../img/instagram.png" alt="logo-ig">
-                            </a>
+        <footer>
+            <div class="container py-5">
+                <div class="footer__center">
+                    <a href="../index.html">
+                        <div class="logo d-flex flex-row justify-content-center align-items-center">
+                            <img src="../img/logo-shark-white.png" alt="logo-sharked">
+                            <h2 class="colorS m-0">SHARKED</h2>
                         </div>
+                    </a>
+                </div>
+                <div class="footer-subcontainer mt-3 wow animate__animated animate__fadeIn">
+                    <div class="footer__left">
+                        <p class="colorS">Términos y condiciones<br>
+                            políticas de privicad</p>
+                    </div>
+                    <div class="footer__right">
+                        <div class="footer__socialm">
+                            <div class="instagram">
+                                <a href="https://www.instagram.com/sharked.dw/">
+                                    <img src="../img/instagram.png" alt="logo-ig">
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="colorS">Síguenos en nuestras redes sociales.</p>
+                        </div>
+                    </div>
+                    <p class="colorS">&copy;copyright</p>
+                    <div>
+                        <p class="colorS">número de contacto</p>
+                        <p class="colorS">11 1234-5678</p>
                     </div>
                     <div>
-                        <p class="colorS">Síguenos en nuestras redes sociales.</p>
+                        <p class="colorS">mail de contacto</p>
+                        <p class="colorS">contacto@sharked.com</p>
                     </div>
                 </div>
-                <p class="colorS">&copy;copyright</p>
-                <div>
-                    <p class="colorS">número de contacto</p>
-                    <p class="colorS">11 1234-5678</p>
-                </div>
-                <div>
-                    <p class="colorS">mail de contacto</p>
-                    <p class="colorS">contacto@sharked.com</p>
-                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script>
         new WOW().init();

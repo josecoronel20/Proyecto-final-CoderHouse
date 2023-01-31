@@ -475,7 +475,7 @@ li::marker {
         color: #C4E6E4;
     }
 
-    .form-floating label{
+    .form-floating label {
         color: #437D85;
         border-radius: 10px;
     }
@@ -487,51 +487,58 @@ li::marker {
 /*trabaja con nosotros----------------------------------------------------*/
 /*trabaja con nosotros----------------------------------------------------*/
 
-.trabajaConNos {
+#trabajaConNos {
     padding-top: 7vh;
-    background-color: #E8F1F2;
+
+    .banner__trabajaConNos img {
+        width: 100%;
+    }
+
 }
 
-.banner__trabajaConNos {
+
+
+.section-img {
     display: flex;
-    flex-direction: column;
-    gap: 5vh;
-}
-
-.banner__trabajaConNos img {
-    width: 100%;
-}
-
-.trabajaConNos h2 {
-    font-weight: bold;
-    color: #006494;
-}
-
-.banner__trabajaConNos p {
-    color: #006494;
-    margin-bottom: 5vh;
-}
-
-.postulate {
-    background-color: #006494;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    padding: 2vh;
-    align-items: center;
-}
-
-.postulate__bottom {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    padding-top: 7vh;
+
+    ul{
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        list-style: none;
+        margin-bottom: 25px;
+    }
+
+    img {
+        width: 60%;
+        border-radius: 15px;
+        margin-bottom: 15px;
+    }
 }
 
-.postulate img {
-    width: 100%;
-    display: none;
+.img-1 {
+    flex-direction: column;
 }
 
-.postulate h3,
-.postulate p {
-    color: #E8F1F2;
+.img-2 {
+    flex-direction: column-reverse;
 }
+
+@media screen and (min-width: 768px) {
+    .section-img{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 30px;
+
+        img{
+            width: 100%;
+        }
+    }
+    
+}
+

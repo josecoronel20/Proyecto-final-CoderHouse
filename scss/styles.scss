@@ -4,6 +4,8 @@
     margin: 0;
 }
 
+@import 'variables';
+
 .colorP {
     color: #437D85;
 }
@@ -483,62 +485,79 @@ li::marker {
 
 
 
-/*trabaja con nosotros----------------------------------------------------*/
-/*trabaja con nosotros----------------------------------------------------*/
-/*trabaja con nosotros----------------------------------------------------*/
+/*desarrollo de la página----------------------------------------------------*/
+/*desarrollo de la página----------------------------------------------------*/
+/*desarrollo de la página----------------------------------------------------*/
 
-#trabajaConNos {
-    padding-top: 7vh;
+#section-desarrollo {
+    padding: 14vh 0 7vh 0;
+    background-color: #62A8AC;
+    color: $colorS;
 
-    .banner__trabajaConNos img {
-        width: 100%;
+    h1 {
+        margin-bottom: 5vh;
     }
 
-}
+    .container {
+        @include flex-column-center;
+        @include paddingY;
 
-
-
-.section-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 7vh;
-
-    ul{
-        margin: 0;
-        padding: 0;
-    }
-
-    li {
-        list-style: none;
-        margin-bottom: 25px;
-    }
-
-    img {
-        width: 60%;
-        border-radius: 15px;
-        margin-bottom: 15px;
+        img {
+            @include img(100%);
+            display: none;
+        }
     }
 }
 
-.img-1 {
-    flex-direction: column;
-}
+main {
 
-.img-2 {
-    flex-direction: column-reverse;
+        .container {
+            @include flex-column-center;
+            color: $colorS;
+
+            h2 {
+                font-weight: bold;
+                margin-bottom: 5vh;
+            }
+
+            img {
+                @include img(100%)
+            }
+        }
+    }
+
+main div:nth-child(even) {
+    background-color: #62A8AC;
 }
 
 @media screen and (min-width: 768px) {
-    .section-img{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 30px;
+    #section-desarrollo {
+        .container {
+            .container-middle {
+                @include flex-row-center;
 
-        img{
-            width: 100%;
+                img {
+                    display: flex;
+                    @include img(50%);
+                }
+            }
         }
     }
-    
-}
 
+    main {
+        .container {
+            @include flex-row-center;
+
+            img {
+                @include img(50%);
+                max-width: 500px;
+            }
+        }
+    }
+
+    main div:nth-child(even) {
+        .container {
+            flex-direction: row-reverse;
+        }
+    }
+}

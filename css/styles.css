@@ -351,25 +351,48 @@ li::marker {
 /*galeria------------------------------------------------------------------*/
 /*galeria------------------------------------------------------------------*/
 #galeria {
-  padding-top: 7vh; }
+  padding-top: 14vh; }
+  #galeria h1 {
+    color: #C4E6E4;
+    padding: 0 4vh 4vh; }
+  #galeria .container {
+    display: grid;
+    grid-template-columns: 90%;
+    justify-content: center;
+    column-gap: 4vh;
+    row-gap: 4vh; }
+  #galeria .cards {
+    width: 100%;
+    height: 100%;
+    text-align: start;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #62A8AC;
+    color: #C4E6E4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2vh; }
+    #galeria .cards h4 {
+      font-weight: bold; }
+    #galeria .cards h4, #galeria .cards p {
+      margin: 0; }
+    #galeria .cards img {
+      width: 90%;
+      border-radius: 10px; }
 
 @media screen and (min-width: 768px) {
-  .galeria__trabajos {
-    grid-template-columns: 80% 80%; } }
+  #galeria .container {
+    grid-template-columns: repeat(2, 45%); } }
 
 @media screen and (min-width: 992px) {
-  .galeria__trabajos {
-    grid-template-columns: repeat(3, 1fr); } }
+  #galeria .container {
+    grid-template-columns: repeat(3, 30%); } }
 
 /*pide tu pagina----------------------------------------------------------------*/
 /*pide tu pagina----------------------------------------------------------------*/
 /*pide tu pagina----------------------------------------------------------------*/
-.cards {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  border-radius: 7px; }
-
 #formulario {
   padding: 14vh 0; }
   #formulario p,

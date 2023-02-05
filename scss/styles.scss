@@ -204,11 +204,11 @@ header img {
 
 }
 
-.accordion button{
+.accordion button {
     font-size: 20px;
 }
 
-.accordion-button{
+.accordion-button {
     background-color: #C4E6E4;
     color: #437D85;
 }
@@ -220,8 +220,9 @@ header img {
 
 .accordion-body {
     background-color: #62A8AC;
-    color:#C4E6E4;
+    color: #C4E6E4;
 }
+
 /*-------------------------------------empezar-------------------------------*/
 
 .section-empezar {
@@ -456,35 +457,47 @@ li::marker {
 /*galeria------------------------------------------------------------------*/
 /*galeria------------------------------------------------------------------*/
 /*galeria------------------------------------------------------------------*/
-
-
 #galeria {
-    padding-top: 7vh;
+    padding-top: 14vh;
+
+h1{
+    color: #C4E6E4;
+    padding:0 4vh 4vh;
+}
+
+    .container{
+        display: grid;
+        grid-template-columns: 90%;
+        justify-content: center;
+        column-gap: 4vh;
+        row-gap: 4vh;
+    }
+
+    .cards {
+        @include card;
+    }
 }
 
 @media screen and (min-width: 768px) {
-    .galeria__trabajos {
-        grid-template-columns: 80% 80%;
+    #galeria{
+        .container{
+            grid-template-columns: repeat(2,45%);
+        }
     }
 }
 
-@media screen and (min-width: 992px) {
-    .galeria__trabajos {
-        grid-template-columns: repeat(3, 1fr);
-
+@media screen and (min-width: 992px){
+    #galeria{
+        .container{
+            grid-template-columns: repeat(3,30%);
+        }
     }
 }
 
-/*pide tu pagina----------------------------------------------------------------*/
-/*pide tu pagina----------------------------------------------------------------*/
-/*pide tu pagina----------------------------------------------------------------*/
-.cards{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    border-radius: 7px;
-}
 
+/*pide tu pagina----------------------------------------------------------------*/
+/*pide tu pagina----------------------------------------------------------------*/
+/*pide tu pagina----------------------------------------------------------------*/
 #formulario {
     padding: 14vh 0;
 
@@ -506,7 +519,7 @@ li::marker {
 /*desarrollo de la página----------------------------------------------------*/
 
 #section-desarrollo {
-    padding: 14vh 1vh 7vh ;
+    padding: 14vh 1vh 7vh;
     background-color: #62A8AC;
     color: $colorS;
 
@@ -527,20 +540,20 @@ li::marker {
 
 main {
 
-        .container {
-            @include flex-column-center;
-            color: $colorS;
+    .container {
+        @include flex-column-center;
+        color: $colorS;
 
-            h2 {
-                font-weight: bold;
-                margin-bottom: 5vh;
-            }
+        h2 {
+            font-weight: bold;
+            margin-bottom: 5vh;
+        }
 
-            img {
-                @include img(100%)
-            }
+        img {
+            @include img(100%)
         }
     }
+}
 
 main div:nth-child(even) {
     background-color: #62A8AC;

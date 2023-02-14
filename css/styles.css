@@ -256,7 +256,7 @@ footer p {
   align-items: center;
   justify-content: center;
   padding: 3.7rem 0;
-  height: 90vh; }
+  height: 100vh; }
 
 .quieneSomos__container {
   display: flex;
@@ -402,6 +402,10 @@ li::marker {
     color: #437D85;
     border-radius: 10px; }
 
+@media screen and (min-width: 768px) {
+  #formulario .form-width {
+    width: 50%; } }
+
 /*desarrollo de la página----------------------------------------------------*/
 /*desarrollo de la página----------------------------------------------------*/
 /*desarrollo de la página----------------------------------------------------*/
@@ -423,21 +427,21 @@ li::marker {
       border-radius: 15px;
       display: none; }
 
-main .container {
+#main-desarrollo .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   color: #C4E6E4; }
-  main .container h2 {
+  #main-desarrollo .container h2 {
     font-weight: bold;
     margin-bottom: 5vh; }
-  main .container img {
+  #main-desarrollo .container img {
     width: 100%;
     height: auto;
     border-radius: 15px; }
 
-main div:nth-child(even) {
+#main-desarrollo div:nth-child(even) {
   background-color: #62A8AC; }
 
 @media screen and (min-width: 768px) {
@@ -452,16 +456,16 @@ main div:nth-child(even) {
       width: 50%;
       height: auto;
       border-radius: 15px; }
-  main .container {
+  #main-desarrollo .container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 5vh; }
-    main .container img {
+    #main-desarrollo .container img {
       width: 50%;
       height: auto;
       border-radius: 15px;
       max-width: 500px; }
-  main div:nth-child(even) .container {
+  #main-desarrollo div:nth-child(even) .container {
     flex-direction: row-reverse; } }

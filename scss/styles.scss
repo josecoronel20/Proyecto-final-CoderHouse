@@ -333,7 +333,7 @@ footer p {
 .quieneSomos-container {
     @include flex-column-center;
     padding: 3.7rem 0;
-    height: 90vh;
+    height: 100vh;
 }
 
 .quieneSomos__container {
@@ -512,6 +512,14 @@ h1{
     }
 }
 
+@media screen and (min-width:768px){
+    #formulario{
+        .form-width{
+            width: 50%;
+        }
+    }    
+}
+
 
 
 /*desarrollo de la página----------------------------------------------------*/
@@ -538,7 +546,7 @@ h1{
     }
 }
 
-main {
+#main-desarrollo {
 
     .container {
         @include flex-column-center;
@@ -555,7 +563,7 @@ main {
     }
 }
 
-main div:nth-child(even) {
+#main-desarrollo div:nth-child(even) {
     background-color: #62A8AC;
 }
 
@@ -573,7 +581,7 @@ main div:nth-child(even) {
         }
     }
 
-    main {
+    #main-desarrollo {
         .container {
             @include flex-row-center;
 
@@ -584,7 +592,7 @@ main div:nth-child(even) {
         }
     }
 
-    main div:nth-child(even) {
+    #main-desarrollo div:nth-child(even) {
         .container {
             flex-direction: row-reverse;
         }
